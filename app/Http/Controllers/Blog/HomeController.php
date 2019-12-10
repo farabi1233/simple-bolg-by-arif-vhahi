@@ -19,4 +19,26 @@ class HomeController extends Controller
     public function input(){
         return view('blog.input');
     }
+    public function show_blog($id){
+       
+    
+
+        $data=[
+
+            'blog' =>  Blog::find($id)
+        ];
+        
+
+       return view('blog.show_blog')->with($data);
+
+    
+    }
+
+    public function admin_acess(){
+        return view('blog.admin_acess');
+    }
+
+    
+
+
 }

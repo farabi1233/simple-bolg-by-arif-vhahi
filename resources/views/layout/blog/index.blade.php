@@ -26,7 +26,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">BLOG HOME</a>
+      <a class="navbar-brand js-scroll-trigger" href="{{ url('/') }}">BLOG HOME</a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -34,13 +34,11 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Homepage</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{ url('/') }}">Homepage</a>
           </li>
+          
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">BlogLIst</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">addblog</a>
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{ url('blog/input') }}">Add_blog</a>
           </li>
         </ul>
       </div>
@@ -340,18 +338,19 @@
   </div>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src=""></script>
 
   <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+
+  <script src="{{asset('js/jqBootstrapValidation.js')}}"></script>
+  <script src="{{asset('js/contact_me.js')}}"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/freelancer.min.js"></script>
+  <script src=" {{asset('js/freelancer.min.js')}}"></script>
 
 </body>
 
