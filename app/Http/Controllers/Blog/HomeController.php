@@ -35,7 +35,10 @@ class HomeController extends Controller
     }
 
     public function admin_acess(){
-        return view('blog.admin_acess');
+
+        $data['blogs'] = Blog::with(['category'])->get();
+
+        return view('blog.admin_acess')->with($data);
     }
 
     

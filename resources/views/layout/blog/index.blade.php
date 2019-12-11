@@ -36,9 +36,12 @@
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{ url('/') }}">Homepage</a>
           </li>
+          <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{ url('/admin_access') }}">Admin_Access</a>
+          </li>
           
           <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{ url('blog/input') }}">Add_blog</a>
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{ url('/insert') }}">Add_blog</a>
           </li>
         </ul>
       </div>

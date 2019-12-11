@@ -12,7 +12,7 @@
 */
 
 Route::get('/','Blog\HomeController@index' );
-Route::get('/blog/input','Blog\HomeController@input' );
+Route::get('/insert','Blog\HomeController@input' );
 Route::get('/blog/show_blog/{id}','Blog\HomeController@show_blog' );
-Route::get('/delete','Blog\HomeController@admin_acess' );
+Route::get('/admin_access','Blog\HomeController@admin_acess' );
 //Route::post('/blog/input','Blog\HomeController@input' );
